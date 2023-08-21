@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22146" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22122"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="RiS-Cp-nPe">
+                                <rect key="frame" x="126.66666666666669" y="223" width="140" height="40"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-Hh-emS">
+                                <rect key="frame" x="20" y="143" width="353" height="601"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame" translatesAutoresizingMaskIntoConstraints="NO" id="iy8-WC-Wiv">
+                                <rect key="frame" x="126.66666666666669" y="362" width="140" height="228"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.010743177666931171" green="0.025744117628974276" blue="0.048727448453608213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d0X-Hh-emS" secondAttribute="trailing" constant="20" id="5rG-oy-3kE"/>
+                            <constraint firstItem="d0X-Hh-emS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E9M-GS-s1f"/>
+                            <constraint firstItem="iy8-WC-Wiv" firstAttribute="top" secondItem="RiS-Cp-nPe" secondAttribute="bottom" constant="99" id="Ugb-p0-x0o"/>
+                            <constraint firstItem="RiS-Cp-nPe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bYu-kE-VOe"/>
+                            <constraint firstItem="iy8-WC-Wiv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f34-Dv-zrr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d0X-Hh-emS" secondAttribute="bottom" constant="60" id="g3r-DJ-fGj"/>
+                            <constraint firstItem="RiS-Cp-nPe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="giD-aP-wxz"/>
+                            <constraint firstItem="d0X-Hh-emS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="np7-EU-0lc"/>
+                            <constraint firstItem="d0X-Hh-emS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="zKm-Qc-Lbm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.68702290076335" y="359.85915492957747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frame" width="140" height="228"/>
+        <image name="Frame-1" width="140" height="40"/>
+        <image name="Group" width="334" height="650"/>
+    </resources>
+</document>
