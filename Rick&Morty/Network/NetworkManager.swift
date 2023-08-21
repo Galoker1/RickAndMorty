@@ -110,9 +110,7 @@ class NetworkManager{
                     return
                 }
                 if let imageData = data {
-                    // Создаем UIImage из данных
                     if let image = UIImage(data: imageData) {
-                        // Обновляем UI на основе полученного изображения
                         DispatchQueue.main.async {
                             completion(image)
                         }

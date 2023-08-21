@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    // Создание UIColor из hex-значения
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var formattedHex = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 

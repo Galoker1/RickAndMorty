@@ -53,7 +53,7 @@ class CharacterCell: UICollectionViewCell{
         nameLabel.textAlignment = .center
         nameLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 10 // Задаем радиус, чтобы изображение стало круглым
+        imageView.layer.cornerRadius = 10 
         imageView.clipsToBounds = true
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))

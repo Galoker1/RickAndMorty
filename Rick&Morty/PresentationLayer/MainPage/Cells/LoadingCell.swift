@@ -22,13 +22,10 @@ class LoadingCell: UICollectionViewCell{
         }
         
         func setupUI() {
-            // Настраиваем внешний вид внутри ячейки
-            
-            // Добавляем activityIndicator
+
             activityIndicator.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview(activityIndicator)
-            
-            // Располагаем activityIndicator по центру ячейки
+
             activityIndicator.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
             activityIndicator.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
             startLoading()

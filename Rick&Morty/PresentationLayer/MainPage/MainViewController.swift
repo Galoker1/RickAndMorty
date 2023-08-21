@@ -55,9 +55,8 @@ class MainViewController: UIViewController {
     func loadMoreDataIfNeeded() {
         let currentTime = Date()
         
-        // Проверяем, прошло ли более 1 секунды с момента последней загрузки данных
         if let lastFetchTime = lastFetchTime, currentTime.timeIntervalSince(lastFetchTime) < 1 {
-            return // Если меньше 1 секунды, не загружаем
+            return
         }
         currentPage += 1
         lastFetchTime = currentTime
@@ -138,7 +137,6 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Выбран элемент: \(indexPath.item)")
         
-        // Здесь можете выполнить дополнительные действия при выборе элемента, такие как переход на другой экран
     }
 
     

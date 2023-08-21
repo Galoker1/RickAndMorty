@@ -75,7 +75,6 @@ class CharacterViewController: UIViewController {
         cell.dateLabel.text = episodes[indexPath.row].air_date
         
 
-        //print("Episode: \(episodeNum), Season: \(seasonNum)")
         return cell
 
     }
@@ -85,9 +84,6 @@ class CharacterViewController: UIViewController {
 
 extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("----")
-        print(episodes.count)
-        print("----")
         return episodes.count
         
     }

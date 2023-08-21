@@ -32,7 +32,6 @@ class EpisodeCell:UITableViewCell{
         numLabel.translatesAutoresizingMaskIntoConstraints = false
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
         cellContainerView.translatesAutoresizingMaskIntoConstraints = false
-     //   self.translatesAutoresizingMaskIntoConstraints = false
       
         contentView.addSubview(cellContainerView)
         cellContainerView.addSubview(nameLabel)
@@ -89,7 +88,6 @@ class EpisodeCell:UITableViewCell{
         
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
-        // Не вызываем super.setSelected(_:animated:) для отключения анимации
     }
     
     @objc func cellTapped() {
